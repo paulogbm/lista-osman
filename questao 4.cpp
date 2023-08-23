@@ -11,7 +11,7 @@ void adicionarContato(std::vector<Contato>& listaContatos) {
     Contato novoContato;
     std::cout << "Digite o nome do contato: ";
     std::cin >> novoContato.nome;
-    std::cout << "Digite o número de telefone: ";
+    std::cout << "Digite o nÃºmero de telefone: ";
     std::cin >> novoContato.telefone;
     listaContatos.push_back(novoContato);
     std::cout << "Contato adicionado com sucesso!\n";
@@ -35,7 +35,7 @@ void buscarContato(const std::vector<Contato>& listaContatos, const std::string&
         }
     }
     if (!encontrado) {
-        std::cout << "Contato não encontrado.\n";
+        std::cout << "Contato nÃ£o encontrado.\n";
     }
 }
 
@@ -44,7 +44,7 @@ int main() {
     int opcao;
 
     do {
-        std::cout << "Escolha uma opção:\n";
+        std::cout << "Escolha uma opÃ§Ã£o:\n";
         std::cout << "1. Adicionar Contato\n";
         std::cout << "2. Listar Contatos\n";
         std::cout << "3. Buscar Contato\n";
@@ -67,9 +67,9 @@ int main() {
             }
             case 4:
                 std::cout << "Saindo do programa.\n";
-                return 0;  // Saia do programa diretamente
+                return 0;
             default:
-                std::cout << "Opção inválida.\n";
+                std::cout << "OpÃ§Ã£o invÃ¡lida.\n";
         }
 
     } while (opcao != 4);
